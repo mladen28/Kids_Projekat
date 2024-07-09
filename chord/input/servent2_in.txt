@@ -1,0 +1,6 @@
+pause 30000
+pause 10000
+remove 2.txt
+pause 5000
+pause 70000
+stop

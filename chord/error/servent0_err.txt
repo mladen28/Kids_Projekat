@@ -1,0 +1,17 @@
+13:19:24 - Couldn't send message: [8|localhost:1000|63||BACKUP|localhost:1400|24]
+13:19:28 - Couldn't send message: [8|localhost:1000|65||BACKUP|localhost:1400|24]
+13:19:31 - Couldn't send message: [8|localhost:1000|69|Suc|PING|localhost:1400|24]
+13:19:34 - Couldn't send message: [8|localhost:1000|70||BACKUP|localhost:1400|24]
+13:19:39 - Couldn't send message: [8|localhost:1000|72||BACKUP|localhost:1400|24]
+13:19:42 - Couldn't send message: [8|localhost:1000|69|Suc|PING|localhost:1400|24]
+13:19:43 - Couldn't send message: [8|localhost:1000|74||BACKUP|localhost:1400|24]
+13:19:49 - Couldn't send message: [8|localhost:1000|79||BACKUP|localhost:1400|24]
+Exception in thread "Thread-1" java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at app.ChordState.handleNodeFailed(ChordState.java:382)
+	at app.BuddyService.run(BuddyService.java:87)
+	at java.base/java.lang.Thread.run(Thread.java:1589)

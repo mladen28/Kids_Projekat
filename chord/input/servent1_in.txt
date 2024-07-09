@@ -1,0 +1,6 @@
+pause 40000
+add_file 2.txt public
+pause 5000
+view_file 2.txt
+pause 70000
+stop

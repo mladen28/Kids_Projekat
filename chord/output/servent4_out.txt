@@ -1,0 +1,139 @@
+13:18:37 - Starting servent [24|localhost|1400]
+13:18:37 - Pausing for 10000 ms
+13:18:38 - Sending message [24|localhost:1400|0||NEW_NODE|localhost:1000|8]
+13:18:41 - Got message [28|localhost:1100|24||WELCOME|localhost:1400|24]
+13:18:42 - Sending message [24|localhost:1400|1||UPDATE|localhost:1100|28]
+13:18:43 - Sending message [24|localhost:1400|2||BACKUP|localhost:1100|28]
+13:18:44 - Got message [48|localhost:1200|23||BACKUP|localhost:1400|24]
+13:18:44 - Received backup data
+13:18:46 - Got message [24|localhost:1400|29|1100,1200,1300,1000|UPDATE|localhost:1400|24]
+13:18:47 - Pausing for 4000 ms
+13:18:48 - Got message [8|localhost:1000|30||BACKUP|localhost:1400|24]
+13:18:48 - Received backup data
+13:18:48 - Sending message [24|localhost:1400|5||BACKUP|localhost:1300|4]
+13:18:48 - Sending message [24|localhost:1400|4||BACKUP|localhost:1200|48]
+13:18:48 - Got message [48|localhost:1200|25||BACKUP|localhost:1400|24]
+13:18:48 - Received backup data
+13:18:48 - Sending message [24|localhost:1400|3||BACKUP|localhost:1100|28]
+13:18:49 - Got message [4|localhost:1300|16||BACKUP|localhost:1400|24]
+13:18:49 - Received backup data
+13:18:49 - Sending PING message to Predecessor[24|localhost:1400|6|Pred|PING|localhost:1000|8]
+13:18:49 - Sending PING message to Successor[24|localhost:1400|7|Suc|PING|localhost:1100|28]
+13:18:50 - Sending message [24|localhost:1400|6|Pred|PING|localhost:1000|8]
+13:18:50 - Sending PING message to Predecessor after WEAK_TIMEOUT[24|localhost:1400|6|Pred|PING|localhost:1000|8]
+13:18:51 - Sending message [24|localhost:1400|7|Suc|PING|localhost:1100|28]
+13:18:51 - Got message [8|localhost:1000|32||ADD_FILE|localhost:1400|24]
+20
+13:18:51 - File chord/workplace\2.txt stored successfully as public
+{20=file.MyFile@54b52d51}
+# After addition to storage
+storage = 20 -- file.MyFile@54b52d51 -- 28
+13:18:51 - Got message [8|localhost:1000|33|Pred|PONG|localhost:1400|24]
+13:18:51 - Sending message [24|localhost:1400|6|Pred|PING|localhost:1000|8]
+13:18:51 - Pausing for 6000 ms
+13:18:51 - Got message [28|localhost:1100|32|Suc|PONG|localhost:1400|24]
+13:18:52 - Got message [8|localhost:1000|35|Pred|PONG|localhost:1400|24]
+13:18:52 - Got message [28|localhost:1100|33|Pred|PING|localhost:1400|24]
+13:18:52 - Sending PONG message [24|localhost:1400|8|Pred|PONG|localhost:1100|28]
+13:18:52 - Got message [8|localhost:1000|37|Suc|PING|localhost:1400|24]
+13:18:52 - Sending PONG message [24|localhost:1400|12|Suc|PONG|localhost:1000|8]
+13:18:53 - Got message [4|localhost:1300|22||BACKUP|localhost:1400|24]
+13:18:53 - Received backup data
+13:18:53 - Sending message [24|localhost:1400|12|Suc|PONG|localhost:1000|8]
+13:18:53 - Got message [8|localhost:1000|38||BACKUP|localhost:1400|24]
+13:18:53 - Received backup data
+13:18:53 - Sending message [24|localhost:1400|10||BACKUP|localhost:1200|48]
+13:18:53 - Got message [28|localhost:1100|33|Pred|PING|localhost:1400|24]
+13:18:53 - Sending PONG message [24|localhost:1400|13|Pred|PONG|localhost:1100|28]
+13:18:53 - Sending message [24|localhost:1400|8|Pred|PONG|localhost:1100|28]
+13:18:53 - Sending message [24|localhost:1400|9||BACKUP|localhost:1100|28]
+13:18:53 - Sending message [24|localhost:1400|11||BACKUP|localhost:1300|4]
+13:18:54 - Got message [48|localhost:1200|33||BACKUP|localhost:1400|24]
+13:18:54 - Received backup data
+13:18:54 - Sending message [24|localhost:1400|13|Pred|PONG|localhost:1100|28]
+13:18:57 - Pausing for 5000 ms
+13:18:58 - Sending message [24|localhost:1400|15||BACKUP|localhost:1200|48]
+13:18:58 - Got message [28|localhost:1100|40|chord/workplace\2.txt|ASK_VIEW_FILE|localhost:1400|24]
+13:18:58 - Sending message [24|localhost:1400|16||BACKUP|localhost:1300|4]
+13:18:58 - Got message [8|localhost:1000|42||BACKUP|localhost:1400|24]
+13:18:58 - Received backup data
+13:18:58 - Got message [4|localhost:1300|29||BACKUP|localhost:1400|24]
+13:18:58 - Received backup data
+13:18:58 - Sending message [24|localhost:1400|14||BACKUP|localhost:1100|28]
+13:18:59 - Sending message [24|localhost:1400|17||TELL_VIEW_FILE|localhost:1100|28]
+13:18:59 - Got message [48|localhost:1200|36||BACKUP|localhost:1400|24]
+13:18:59 - Received backup data
+13:19:01 - Got message [8|localhost:1000|44|chord/workplace\2.txt|REMOVE|localhost:1400|24]
+13:19:01 - Removing file chord/workplace\2.txt from virtual memory. My value map has 0 elements
+13:19:02 - Pausing for 70000 ms
+13:19:02 - Sending PING message to Predecessor[24|localhost:1400|18|Pred|PING|localhost:1000|8]
+13:19:02 - Sending PING message to Successor[24|localhost:1400|22|Suc|PING|localhost:1100|28]
+13:19:03 - Sending message [24|localhost:1400|20||BACKUP|localhost:1200|48]
+13:19:03 - Sending message [24|localhost:1400|22|Suc|PING|localhost:1100|28]
+13:19:03 - Sending message [24|localhost:1400|21||BACKUP|localhost:1300|4]
+13:19:03 - Sending message [24|localhost:1400|18|Pred|PING|localhost:1000|8]
+13:19:03 - Sending PING message to Predecessor after WEAK_TIMEOUT[24|localhost:1400|18|Pred|PING|localhost:1000|8]
+13:19:03 - Sending message [24|localhost:1400|19||BACKUP|localhost:1100|28]
+13:19:03 - Got message [8|localhost:1000|45||BACKUP|localhost:1400|24]
+13:19:03 - Received backup data
+13:19:04 - Got message [4|localhost:1300|34||BACKUP|localhost:1400|24]
+13:19:04 - Received backup data
+13:19:04 - Got message [28|localhost:1100|44|Suc|PONG|localhost:1400|24]
+13:19:04 - Sending message [24|localhost:1400|18|Pred|PING|localhost:1000|8]
+13:19:04 - Got message [8|localhost:1000|47|Pred|PONG|localhost:1400|24]
+13:19:04 - Got message [48|localhost:1200|39||BACKUP|localhost:1400|24]
+13:19:04 - Received backup data
+13:19:05 - Got message [8|localhost:1000|48|Pred|PONG|localhost:1400|24]
+13:19:05 - Got message [28|localhost:1100|45|Pred|PING|localhost:1400|24]
+13:19:05 - Sending PONG message [24|localhost:1400|23|Pred|PONG|localhost:1100|28]
+13:19:06 - Sending message [24|localhost:1400|23|Pred|PONG|localhost:1100|28]
+13:19:06 - Got message [8|localhost:1000|50|Suc|PING|localhost:1400|24]
+13:19:06 - Sending PONG message [24|localhost:1400|24|Suc|PONG|localhost:1000|8]
+13:19:06 - Got message [28|localhost:1100|45|Pred|PING|localhost:1400|24]
+13:19:06 - Sending PONG message [24|localhost:1400|25|Pred|PONG|localhost:1100|28]
+13:19:07 - Sending message [24|localhost:1400|24|Suc|PONG|localhost:1000|8]
+13:19:07 - Sending message [24|localhost:1400|25|Pred|PONG|localhost:1100|28]
+13:19:08 - Sending message [24|localhost:1400|28||BACKUP|localhost:1300|4]
+13:19:08 - Got message [8|localhost:1000|52||BACKUP|localhost:1400|24]
+13:19:08 - Received backup data
+13:19:08 - Sending message [24|localhost:1400|26||BACKUP|localhost:1100|28]
+13:19:08 - Got message [4|localhost:1300|42||BACKUP|localhost:1400|24]
+13:19:08 - Received backup data
+13:19:08 - Sending message [24|localhost:1400|27||BACKUP|localhost:1200|48]
+13:19:09 - Got message [48|localhost:1200|46||BACKUP|localhost:1400|24]
+13:19:09 - Received backup data
+13:19:13 - Sending message [24|localhost:1400|29||BACKUP|localhost:1100|28]
+13:19:13 - Sending message [24|localhost:1400|31||BACKUP|localhost:1300|4]
+13:19:13 - Got message [4|localhost:1300|45||BACKUP|localhost:1400|24]
+13:19:13 - Received backup data
+13:19:13 - Sending message [24|localhost:1400|30||BACKUP|localhost:1200|48]
+13:19:14 - Got message [8|localhost:1000|54||BACKUP|localhost:1400|24]
+13:19:14 - Received backup data
+13:19:14 - Got message [48|localhost:1200|48||BACKUP|localhost:1400|24]
+13:19:14 - Received backup data
+13:19:15 - Sending PING message to Predecessor[24|localhost:1400|32|Pred|PING|localhost:1000|8]
+13:19:15 - Sending PING message to Successor[24|localhost:1400|33|Suc|PING|localhost:1100|28]
+13:19:16 - Sending message [24|localhost:1400|32|Pred|PING|localhost:1000|8]
+13:19:16 - Sending PING message to Predecessor after WEAK_TIMEOUT[24|localhost:1400|32|Pred|PING|localhost:1000|8]
+13:19:17 - Sending message [24|localhost:1400|33|Suc|PING|localhost:1100|28]
+13:19:17 - Sending message [24|localhost:1400|32|Pred|PING|localhost:1000|8]
+13:19:17 - Got message [8|localhost:1000|56|Pred|PONG|localhost:1400|24]
+13:19:18 - Got message [28|localhost:1100|53|Suc|PONG|localhost:1400|24]
+13:19:18 - Sending message [24|localhost:1400|35||BACKUP|localhost:1200|48]
+13:19:18 - Got message [8|localhost:1000|62|Suc|PING|localhost:1400|24]
+13:19:18 - Sending PONG message [24|localhost:1400|37|Suc|PONG|localhost:1000|8]
+13:19:18 - Sending message [24|localhost:1400|34||BACKUP|localhost:1100|28]
+13:19:18 - Got message [8|localhost:1000|59||BACKUP|localhost:1400|24]
+13:19:18 - Received backup data
+13:19:18 - Got message [48|localhost:1200|53||BACKUP|localhost:1400|24]
+13:19:18 - Received backup data
+13:19:18 - Got message [8|localhost:1000|57|Pred|PONG|localhost:1400|24]
+13:19:19 - Got message [28|localhost:1100|56|Pred|PING|localhost:1400|24]
+13:19:19 - Sending PONG message [24|localhost:1400|38|Pred|PONG|localhost:1100|28]
+13:19:19 - Sending message [24|localhost:1400|36||BACKUP|localhost:1300|4]
+13:19:19 - Got message [4|localhost:1300|50||BACKUP|localhost:1400|24]
+13:19:19 - Received backup data
+13:19:19 - Sending message [24|localhost:1400|37|Suc|PONG|localhost:1000|8]
+13:19:20 - Got message [28|localhost:1100|56|Pred|PING|localhost:1400|24]
+13:19:20 - Sending PONG message [24|localhost:1400|39|Pred|PONG|localhost:1100|28]
+13:19:20 - Sending message [24|localhost:1400|38|Pred|PONG|localhost:1100|28]
